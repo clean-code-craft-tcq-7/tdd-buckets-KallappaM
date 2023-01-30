@@ -7,7 +7,7 @@ void CreateInformat(int lowLimit,int highLimit,int counter, char* buff)
   
 //char Data[100];
 sprintf(buff,"%s\n%d-%d, %d\n",CSVFormat,lowLimit,highLimit,counter);
- printf("%s", buff);
+ //printf("%s", buff);
 //strncpy(buff,Data,strlen(Data));
 }
 void doSort(int *A,int len)
