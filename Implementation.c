@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "Functionality.h"
+#include "Implementation.h"
 
 void CreateInformat(int lowLimit,int highLimit,int counter, char* buff)
 {
