@@ -28,7 +28,7 @@ void doSort(int *A,int len)
 }
 int CountValue(int *A,int len, int low,int high)
 {
-int i,cnt = 1;
+int i,cnt = 0;
 for(i=0;i<=len;i++)
 {
   if(A[i]>=low && A[i]<=high)
