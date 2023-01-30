@@ -6,6 +6,7 @@
 
 int main(void)
 {
+ 
  char output[100];
  memset(output, 0, 100);
  
