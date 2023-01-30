@@ -2,6 +2,8 @@
 #include <string.h>
 #include "Implementation.h"
 
+#define checkrange(a, low, high)  (a>=low && a<=high)
+
 static void swapelement(int a, int b);
 
 void CreateInformat(int lowLimit,int highLimit,int counter, char* buff)
@@ -28,7 +30,7 @@ int CountValue(int *A,int len, int low,int high)
 int i,cnt = 0;
 for(i=0;i<=len;i++)
 {
-  if(A[i]>=low && A[i]<=high)
+  if(checkrange(A[i], low, high))
   {
       cnt++;
   }
