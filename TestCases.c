@@ -13,6 +13,7 @@ int main(void)
  int current_samples4[]={3, 3, 5, 4, 10, 11,12}; /* Given use case  3-5 it should return 4*/
  int current_samples5[]={3, 3, 5, 4, 10, 11,12}; /* Given use case  12-12 it should return 3*/
  int current_samples6[]={1,2};
+ int current_samples7[]={1,1,1,1,1,1};
  
  char output[100];
  memset(output, 0, 100);
@@ -40,6 +41,10 @@ assert(strcmp(output,"Range, Readings\n10-12, 3\n") == 0);
 PerformTest(current_samples6,LEN(current_samples6),1,2,output);
 printf("%s", output);
 assert(strcmp(output,"Range, Readings\n1-2, 2\n") == 0);
+ 
+PerformTest(current_samples7,LEN(current_samples7),4,5,output);
+printf("%s", output);
+assert(strcmp(output,"Range, Readings\n4-5, 0\n") == 0);
   
 return 0;
   
