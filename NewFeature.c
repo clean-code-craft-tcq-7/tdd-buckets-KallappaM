@@ -10,7 +10,7 @@
 
 #define Converter(x)  ((int)(x*1000)%1000)
 
-const int GloableLen ;
+ int GloableLen ;
 
 
 int A2DConverter(int LSBValue,int bit)
@@ -33,10 +33,10 @@ int A2DConverter(int LSBValue,int bit)
     return (int)ReturnVal;
   
 }
-int * RemoveUnwanted(int arr[],int bit, const int len)
+int * RemoveUnwanted(int arr[],int bit, int len)
 { 
-    //const int len = 7;//(GloableLen);
-    printf("SHad %d " , len);
+    const int len = 7;
+    printf("Sh %d " , len);
     int threshold = NthBitCalculate(bit);
     static int r[len];
     for(int i=0;i<len;i++)
