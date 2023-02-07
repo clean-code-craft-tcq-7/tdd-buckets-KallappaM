@@ -53,7 +53,7 @@ assert(strcmp(output,"Range, Readings\n4-5, 0\n") == 0);*/
  int Sample1[] = {0,1,1024,4096,2048,4094,6000};
  GloableLen = sizeof(Sample1)/sizeof(Sample1[0]);
  int *p,leng;
- p = RemoveUnwanted(Sample1,12);
+ p = RemoveUnwanted(Sample1,12, GloableLen);
  leng = LEN(Sample1);
  for(int i=0;i<leng;i++)
  {
