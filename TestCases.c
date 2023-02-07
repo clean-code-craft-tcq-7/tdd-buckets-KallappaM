@@ -4,7 +4,7 @@
 #include "Implementation.h"
 
 extern int A2DConverter(int LSBValue,int bit);
-extern int *RemoveUnwanted(int Arr[],int bit);
+extern int *RemoveUnwanted(int Arr[],int bit, int len);
 
 
 int main(void)
