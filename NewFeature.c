@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "Functionality.h"
+#include "Implementation.h"
+
 #define twoToPowerTwelve 4094
 #define Max12BitValue 32768
 #define NthBitCalculate(n)(int)(pow(2,n) -1)
