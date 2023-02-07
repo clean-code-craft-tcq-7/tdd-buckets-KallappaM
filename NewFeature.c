@@ -10,7 +10,7 @@
 
 #define Converter(x)  ((int)(x*1000)%1000)
 
-int GloableLen ;
+const int GloableLen ;
 
 
 int A2DConverter(int LSBValue,int bit)
