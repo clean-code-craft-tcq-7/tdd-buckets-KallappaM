@@ -7,4 +7,6 @@ void PerformTest(int *A,int len,int min,int max,char* buff);
 int A2DConverter(int LSBValue,int bit);
 int * RemoveUnwanted(int arr[],int bit);
 
+extern int GloableLen ;
+
 
