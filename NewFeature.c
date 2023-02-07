@@ -38,7 +38,7 @@ int * RemoveUnwanted(int arr[],int bit)
     int len = GloableLen;
     printf("SHad %d " , len);
     int threshold = NthBitCalculate(bit);
-    int r[len];
+    static int r[len];
     for(int i=0;i<len;i++)
     {
         if(arr[i]<=threshold)
