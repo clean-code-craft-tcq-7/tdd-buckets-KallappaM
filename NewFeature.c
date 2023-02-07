@@ -35,7 +35,7 @@ int A2DConverter(int LSBValue,int bit)
 }
 int * RemoveUnwanted(int arr[],int bit, int len)
 { 
-    const int len = 7;//(GloableLen);
+    //const int len = 7;//(GloableLen);
     printf("SHad %d " , len);
     int threshold = NthBitCalculate(bit);
     static int r[len];
