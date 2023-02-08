@@ -33,7 +33,7 @@ int A2DConverter(int LSBValue,int bit)
     return (int)ReturnVal;
   
 }
-int * RemoveUnwanted(int arr[],int bit, int len)
+int * RemoveUnwanted(int arr[],int bit)
 { 
     const int len = 7;
     printf("Sh %d " , len);
