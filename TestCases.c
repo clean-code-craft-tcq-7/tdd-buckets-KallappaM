@@ -4,7 +4,7 @@
 #include "Implementation.h"
 
 extern int A2DConverter(int LSBValue,int bit);
-extern int *RemoveUnwanted(int Arr[],int bit, int len);
+extern int *RemoveUnwanted(int Arr[],int bit);
 
 
 int main(void)
@@ -51,9 +51,8 @@ printf("%s", output);
 assert(strcmp(output,"Range, Readings\n4-5, 0\n") == 0);*/
  
  int Sample1[] = {0,1,1024,4096,2048,4094,6000};
- GloableLen = 7;
  int *p,leng;
- p = RemoveUnwanted(Sample1,12, GloableLen);
+ p = RemoveUnwanted(Sample1,12);
  leng = LEN(Sample1);
  for(int i=0;i<leng;i++)
  {
